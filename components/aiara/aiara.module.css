@@ -1,0 +1,216 @@
+.slideBackground{
+  width: 100%;
+  height: 100%;
+}
+.slideContent{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+.assetsonLeft{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.assetsonRight{
+  width: 50%;
+  height: 100%;
+}
+
+/* Gradient Layout */
+.gradient1{
+  height: 48%;
+  width: 100%;
+}
+.gradient2{
+  height: 48%;
+  width: 100%;
+  /* margin-top: 27%; */
+}
+.gradient3{
+  height: 4%;
+  width: 100%;
+  /* margin-top: 54.5%; */
+}
+
+/* Images */
+.aiaraBaseImg{
+  width: 40rem;
+  height: 40rem;
+  z-index: 3;
+  position: absolute;
+}
+.drillImg{
+  width: 3rem;
+  height: 3rem;
+  margin-left: 27rem;
+  margin-top: 17rem;
+  z-index: 2;
+  animation: moveDrill 1s linear infinite;
+  position: absolute;
+}
+.bulbImg{
+  z-index: 4;
+  margin-left: 27.8rem;
+  margin-top: 10.4rem;
+  position: absolute;
+}
+.bulbc{
+  animation: 2s ease-in-out infinite blinkBulb;
+}
+.barChart{
+  z-index: 4;
+  /* background-color: salmon; */
+  margin-top: 12.1rem;
+  margin-left: 5rem;
+  position: absolute;
+  
+}
+.bar1{
+  width: 8px;
+  height: 13px;
+  background-color: #4EC2C2;
+  position: absolute;
+  margin-top: 25px;
+  animation: increaseBar1 4s linear infinite;
+}
+.bar2{
+  margin-left: 13px;
+  width: 8px;
+  height: 18px;
+  background-color: #71C285;
+  position: absolute;
+  margin-top: 20px;
+  animation: increaseBar2 2s linear infinite;
+}
+.bar3{
+  margin-left: 26px;
+  width: 8px;
+  height: 26px;
+  background-color: #EC58A8;
+  position: absolute;
+  margin-top: 12px;
+  animation: increaseBar3 1.5s linear infinite;
+}
+.bar4{
+  margin-left: 39px;
+  width: 8px;
+  height: 38px;
+  background-color: #902FB2;
+  position: absolute;
+  animation: increaseBar4 1s linear infinite;
+}
+
+/* Animations */
+@keyframes moveDrill {
+  0% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(5px);
+  }
+  80% {
+    transform: translateY(2.5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes blinkBulb {
+  0% {
+    fill: rgb(236, 24, 24);
+  }
+  50% {
+    fill: rgb(84, 236, 24);
+  }
+  100% {
+    fill: rgb(236, 24, 24);
+  }
+}
+
+
+
+@keyframes increaseBar1 {
+  0% {
+    transform: translateY(0px);
+    height: 13px;
+  }
+  50% {
+    transform: translateY(-20px);
+    height: 33px;
+  }
+  100% {
+    transform: translateY(0px);
+    height: 13px;
+  }
+}
+@keyframes increaseBar2 {
+  0% {
+    transform: translateY(0px);
+    height: 18px;
+  }
+  50% {
+    transform: translateY(-15px);
+    height: 33px;
+  }
+  100% {
+    transform: translateY(0px);
+    height: 18px;
+  }
+}
+@keyframes increaseBar3 {
+  0% {
+    transform: translateY(0px);
+    height: 26px;
+  }
+  50% {
+    transform: translateY(-7px);
+    height: 33px;
+  }
+  100% {
+    transform: translateY(0px);
+    height: 26px;
+  }
+}
+@keyframes increaseBar4 {
+  0% {
+    transform: translateY(0px);
+    height: 38px;
+  }
+  50% {
+    transform: translateY(10px);
+    height: 28px;
+  }
+  100% {
+    transform: translateY(0px);
+    height: 38px;
+  }
+}
+
+/* Gradient Pallet */
+.gradientb1{
+  background-color: #f1cb22;
+}
+.gradientb2{
+  background-color: #e4db3f;
+}
+.gradientb3{
+  background-color: #f1cb22;
+}
+
+@media (max-width: 1120px) {
+  .slideContent{
+    flex-direction: column;
+  }
+  .assetsonLeft{
+    width: 100%;
+  }
+  .assetsonRight{
+    width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+.footer{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    gap: 5rem;
+    background-color: black;
+}
+.arrowRight{
+    font-size: 3rem;
+    transform: rotate(-45deg);
+    color: #eb5939;
+    transition: .2s ease-in-out;
+}
+.socialLink{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    transition: .3s ease-in-out;
+    text-decoration: none;
+    color: white;
+}
+.socialLink:hover{
+    color: #eb5939;
+}
+.socialLink:hover .arrowRight{
+    transform: rotate(0deg);
+}

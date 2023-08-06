@@ -1,0 +1,548 @@
+.main{
+  width: 100%;
+  height: 100vh;
+}
+.slide{
+  height: 100vh;
+  background-color: rgba(255, 105, 180, 0);
+  color: red;
+  font-size: 3rem;
+
+}
+.slideBackground{
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+.slideContent{
+  /* border: 3px solid rgb(0, 128, 43); */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+}
+.assetsonLeft{
+  /* border: 3px solid purple; */
+  width: 50%;
+  height: 100%;
+}
+.assetsonRight{
+  /* border: 3px solid purple; */
+  width: 50%;
+  height: 100%;
+
+}
+
+/* Gradient Layout */
+.gradient1{
+  height: 48%;
+  width: 100%;
+}
+.gradient2{
+  height: 48%;
+  width: 100%;
+  /* margin-top: 27%; */
+}
+.gradient3{
+  height: 4%;
+  width: 100%;
+  /* margin-top: 54.5%; */
+}
+
+/* Images */
+.pipelineImg{
+  width: 30rem;
+  height: 30rem;
+  margin-top: 0rem;
+  margin-left: 3rem;
+  position: absolute;
+  z-index: 2;
+}
+.redHandleImg{
+  margin-left: 9rem;
+  margin-top: 13rem;
+  animation: rotation 1s linear infinite;
+  position: absolute;
+  z-index: 2;
+}
+.smokeImg1{
+  position: absolute;
+  margin-left: 2rem;
+  z-index: 1;
+}
+.smokeImg2{
+  position: absolute;
+  margin-left: 12rem;
+  z-index: 1;
+}
+.smokeImg3{
+  position: absolute;
+  margin-left: 30rem;
+  margin-top: 11rem;
+  z-index: 1;
+  height: 100px;
+  width: 100px;
+}
+.meterImg{
+  position: absolute;
+  margin-left: 18.5rem;
+  margin-top: 11rem;
+  z-index: 3;
+}
+.meterArrow{
+  animation: 1s ease-in-out infinite meterArrowAnimation;
+}
+.smokeanimation1{
+  animation: 1s ease-in-out infinite smokeAnimation;
+}
+.smokeanimation2{
+  animation: 1.5s linear infinite smokeAnimation;
+}
+.smokeanimation3{
+  animation: 2s ease-in-out infinite smokeAnimation;
+}
+.aiaraBaseImg{
+  width: 40rem;
+  height: 40rem;
+  z-index: 3;
+  position: absolute;
+}
+.drillImg{
+  width: 3rem;
+  height: 3rem;
+  margin-left: 27rem;
+  margin-top: 17rem;
+  z-index: 2;
+  animation: moveDrill 1s linear infinite;
+  position: absolute;
+}
+.bulbImg{
+  z-index: 4;
+  margin-left: 27.8rem;
+  margin-top: 10.4rem;
+  position: absolute;
+}
+.bulbc{
+  animation: 2s ease-in-out infinite blinkBulb;
+}
+.barChart{
+  z-index: 4;
+  /* background-color: salmon; */
+  margin-top: 12.1rem;
+  margin-left: 5rem;
+  position: absolute;
+  
+}
+.bar1{
+  width: 8px;
+  height: 13px;
+  background-color: #4EC2C2;
+  position: absolute;
+  margin-top: 25px;
+  animation: increaseBar1 4s linear infinite;
+}
+.bar2{
+  margin-left: 13px;
+  width: 8px;
+  height: 18px;
+  background-color: #71C285;
+  position: absolute;
+  margin-top: 20px;
+  animation: increaseBar2 2s linear infinite;
+}
+.bar3{
+  margin-left: 26px;
+  width: 8px;
+  height: 26px;
+  background-color: #EC58A8;
+  position: absolute;
+  margin-top: 12px;
+  animation: increaseBar3 1.5s linear infinite;
+}
+.bar4{
+  margin-left: 39px;
+  width: 8px;
+  height: 38px;
+  background-color: #902FB2;
+  position: absolute;
+  animation: increaseBar4 1s linear infinite;
+}
+
+.televisionImg{
+  width: 40rem;
+  height: 40rem;
+  margin-top: 10rem;
+  position: absolute;
+}
+.buttonTopImg{
+  width: 10rem;
+  height: 10rem;
+  margin-left: 15rem;
+  margin-top: 39rem;
+  position: absolute;
+  animation: pressButton 2s linear infinite;
+}
+.televisionDisplay{
+  width: 19rem;
+  height: 14rem;
+  margin-left: 10.5rem;
+  margin-top: 11.5rem;
+  /* background-color: salmon; */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.televisionDisplayText{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #08ee2e;
+}
+/* .kfcImg{
+  animation: slideLogo1 2s linear infinite;
+} */
+.brandsImg{
+  margin-left: 60rem;
+  animation: slideLogo1 10s linear infinite;
+}
+.rocketImg{
+  width: 30rem;
+  height: 30rem;
+  margin-left: 10rem;
+  margin-top: 3rem;
+  animation: rocketTilt 1s linear infinite;
+  z-index: 2;
+  position: absolute;
+  
+}
+.rocketFlameImg{
+  margin-top: 30rem;
+  margin-left: 20rem;
+  z-index: 1;
+  position: absolute;
+
+}
+.flame1{
+  height: 10rem;
+  width: 10rem;
+  animation: fireBlast 1s ease-in-out infinite;
+}
+/* Animations */
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes vibrate {
+  from {
+    transform: translateX(0px);
+    transform: translateY(0px);
+    transform: rotate(0deg);
+  }
+  to {
+    transform: translateX(2px);
+    transform: translateY(1px);
+    transform: rotate(.2deg);
+  }
+}
+
+@keyframes moveDrill {
+  0% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(5px);
+  }
+  80% {
+    transform: translateY(2.5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes blinkBulb {
+  0% {
+    fill: rgb(236, 24, 24);
+  }
+  50% {
+    fill: rgb(84, 236, 24);
+  }
+  100% {
+    fill: rgb(236, 24, 24);
+  }
+}
+@keyframes smokeAnimation {
+  0% {
+    fill: rgb(255, 255, 255);
+    transform: translateY(0px);
+    transform: translate(0px, 0px);
+  }
+  30% {
+    fill: rgba(255, 255, 255, 0.705);
+    transform: translate(2px, -20px);
+  }
+  70% {
+    fill: rgba(255, 255, 255, 0.356);
+    transform: translate(4px, -30px);
+  }
+  100% {
+    fill: rgba(255, 255, 255, 0.315);
+    transform: translate(6px, -50px);
+  }
+}
+@keyframes meterArrowAnimation {
+  0% {
+    transform: skew(0px);
+  }
+  100% {
+
+    transform: skewX(100px)
+  }
+}
+
+
+@keyframes increaseBar1 {
+  0% {
+    transform: translateY(0px);
+    height: 13px;
+  }
+  50% {
+    transform: translateY(-20px);
+    height: 33px;
+  }
+  100% {
+    transform: translateY(0px);
+    height: 13px;
+  }
+}
+@keyframes increaseBar2 {
+  0% {
+    transform: translateY(0px);
+    height: 18px;
+  }
+  50% {
+    transform: translateY(-15px);
+    height: 33px;
+  }
+  100% {
+    transform: translateY(0px);
+    height: 18px;
+  }
+}
+@keyframes increaseBar3 {
+  0% {
+    transform: translateY(0px);
+    height: 26px;
+  }
+  50% {
+    transform: translateY(-7px);
+    height: 33px;
+  }
+  100% {
+    transform: translateY(0px);
+    height: 26px;
+  }
+}
+@keyframes increaseBar4 {
+  0% {
+    transform: translateY(0px);
+    height: 38px;
+  }
+  50% {
+    transform: translateY(10px);
+    height: 28px;
+  }
+  100% {
+    transform: translateY(0px);
+    height: 38px;
+  }
+}
+@keyframes pressButton {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes slideLogo1 {
+  0% {
+    transform: translateX(0px);
+  }
+  20% {
+    transform: translateX(-320px);
+  }
+  40% {
+    transform: translateX(-320px);
+  }
+  60% {
+    transform: translateX(-640px);
+  }
+  80% {
+    transform: translateX(-640px);
+  }
+  100% {
+    transform: translateX(-960px);
+  }
+}
+@keyframes rocketTilt {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  70% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes fireBlast {
+  /* 0% {
+    width: 15rem;
+    height: 15rem;
+    margin-left: -3rem;
+    margin-top: -2rem;
+  }
+  100%{
+    width: 15rem;
+    height: 15rem;
+    margin-left: -3rem;
+    margin-top: -2rem;
+  } */
+  0% {
+    width: 10rem;
+    height: 10rem;
+  }
+  25% {
+    transform: rotate(4deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  75% {
+    width: 13rem;
+    height: 13rem;
+    margin-left: -1.3rem;
+    margin-top: -.3rem;
+  }
+  100%{
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+
+
+
+/* Gradient Pallet */
+.gradienta1{
+  background-color: #003044;
+}
+.gradienta2{
+  background-color: #02567a;
+}
+.gradienta3{
+  background-color: #02567abb;
+}
+.gradientb1{
+  background-color: #f4e956;
+}
+.gradientb2{
+  background-color: #faf269;
+}
+.gradientb3{
+  background-color: #e5dd47;
+}
+.gradientc1{
+  background-color: #0b494f;
+}
+.gradientc2{
+  background-color: #08eeb3;
+}
+.gradientc3{
+  background-color: #06d8a3d7;
+}
+.gradientd1{
+  background-color: rgb(12, 11, 11);
+}
+.gradientd2{
+  background-color: rgb(26, 25, 25);
+}
+.gradientd3{
+  background-color: rgb(32, 31, 31);
+}
+
+.unsupportedDeviceMessage{
+  visibility: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: black; 
+  position: fixed;
+  z-index: 100;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  
+}
+
+.navigation{
+  position: fixed;
+  margin-left: -1.9rem;
+  font-size: 1.4rem;
+  font-family: 'Nunito_Sans';
+  font-weight: bold;
+  font-style: normal;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  z-index: 20;
+  width: 6rem;
+  height: 80vh;
+}
+
+.navigationItem{
+  color: white;
+  cursor: pointer;
+  transform: rotate(90deg);
+  text-decoration: none;
+  transition: .2s ease-in-out;
+}
+
+.navigationItem:hover{
+  color: #eb5939;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 1300px) {
+  .slideContent{
+    flex-direction: column;
+  }
+  .assetsonLeft{
+    width: 100%;
+  }
+  .assetsonRight{
+    width: 100%;
+  }
+  .unsupportedDeviceMessage{
+    visibility: visible;
+  }
+}

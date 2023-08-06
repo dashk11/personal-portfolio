@@ -1,0 +1,211 @@
+.slideContent{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+.slideBackground{
+  width: 100%;
+  height: 100%;
+}
+.assetsonLeft{
+  width: 50%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.assetsonRight{
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+}
+/* Gradient Layout */
+.gradient1{
+  height: 48%;
+  width: 100%;
+}
+.gradient2{
+  height: 48%;
+  width: 100%;
+}
+.gradient3{
+  height: 4%;
+  width: 100%;
+}
+
+/* Images */
+.rocketImg{
+  width: 30rem;
+  height: 30rem;
+  margin-left: 10rem;
+  margin-top: 3rem;
+  animation: rocketTilt 1s linear infinite;
+  z-index: 2;
+  position: absolute;
+  
+}
+.rocketFlameImg{
+  margin-top: 30rem;
+  margin-left: 20rem;
+  z-index: 1;
+  position: absolute;
+
+}
+.flame1{
+  height: 10rem;
+  width: 10rem;
+  animation: fireBlast .5s ease-in-out infinite;
+}
+.trails{
+  position: absolute;
+  margin-left: 11.5rem;
+  margin-top: 8rem;
+}
+
+.trail1 {
+  animation: dash 1s linear forwards infinite;
+}
+.trail2 {
+  animation: dash .5s linear forwards infinite;
+}
+.trail3 {
+  animation: dash .4s linear forwards infinite;
+}
+.trail4 {
+  animation: dash .7s linear forwards infinite;
+}
+.trail5 {
+  animation: dash 1s linear forwards infinite;
+}
+.trail6 {
+  animation: dash .8s linear forwards infinite;
+}
+.meteor{
+  position: absolute;
+}
+.meteor3aImg{
+  margin-top: 10rem;
+  animation: meteor 20s linear forwards infinite;
+}
+.meteor3bImg{
+  margin-left: 10rem;
+  animation: meteor 10s linear forwards infinite;
+}
+
+@keyframes meteor {
+  0%{
+    transform: translateX(-1000px);
+  }
+  100%{
+    transform: translateX(1000px) rotate(360deg);
+  }
+}
+
+
+/* Animations */
+@keyframes rocketTilt {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  70% {
+    transform: rotate(-1deg);
+    transform: translateY(10px);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes fireBlast {
+  0% {
+    width: 10rem;
+    height: 10rem;
+  }
+  25% {
+    transform: rotate(4deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  75% {
+    width: 13rem;
+    height: 13rem;
+    margin-left: -1.3rem;
+    margin-top: -.3rem;
+  }
+  100%{
+    width: 10rem;
+    height: 10rem;
+  }
+}
+@keyframes dash {
+  0% {
+    transform: translateY(-500px);
+  }
+  50% {
+    transform: translateY(50px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+}
+
+
+/* Gradient Pallet */
+.gradientd1{
+  background-color: rgb(12, 11, 11);
+}
+.gradientd2{
+  background-color: rgb(51, 50, 50);
+}
+.gradientd3{
+  background-color: rgb(31, 30, 30);
+}
+
+@media (max-width: 1120px) {
+  .slideContent{
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .assetsonLeft{
+    width: 100%;
+  }
+  .assetsonRight{
+    width: 100%;
+  }
+  /* Images */
+  .rocketImg{
+    width: 10rem;
+    height: 10rem;
+    margin-left: 30vw;
+    margin-top: 3vw;
+    animation: rocketTilt 1s linear infinite;
+    z-index: 2;
+    position: absolute;
+    
+  }
+  .rocketFlameImg{
+    margin-top: 17vw;
+    margin-left: 30vw;
+    z-index: 1;
+    position: absolute;
+
+  }
+  .flame1{
+    animation: fireBlast .5s ease-in-out infinite;
+  }
+  .trails{
+    display: none;
+    position: absolute;
+    margin-left: 13.5rem;
+    margin-top: 6rem;
+  }
+}
+

@@ -1,0 +1,166 @@
+.slideContent{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+.slideBackground{
+  width: 100%;
+  height: 100%;
+}
+.assetsonLeft{
+  width: 50%;
+  height: 100%;
+}
+.assetsonRight{
+  /* border: 3px solid purple; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Gradient Layout */
+.gradient1{
+  height: 48%;
+  width: 100%;
+}
+.gradient2{
+  height: 48%;
+  width: 100%;
+  /* margin-top: 27%; */
+}
+.gradient3{
+  height: 4%;
+  width: 100%;
+  /* margin-top: 54.5%; */
+}
+
+/* Images */
+.pipelineImg{
+  width: 30rem;
+  height: 30rem;
+  margin-top: 0rem;
+  margin-left: 3rem;
+  position: absolute;
+  z-index: 2;
+}
+.redHandleImg{
+  margin-left: 9rem;
+  margin-top: 13rem;
+  animation: rotation 1s linear infinite;
+  position: absolute;
+  z-index: 2;
+}
+.smokeImg1{
+  position: absolute;
+  margin-left: 2rem;
+  z-index: 1;
+}
+.smokeImg2{
+  position: absolute;
+  margin-left: 12rem;
+  z-index: 1;
+}
+.smokeImg3{
+  position: absolute;
+  margin-left: 30rem;
+  margin-top: 11rem;
+  z-index: 1;
+  height: 100px;
+  width: 100px;
+}
+.meterImg{
+  position: absolute;
+  margin-left: 18.5rem;
+  margin-top: 11rem;
+  z-index: 3;
+}
+.meterArrow{
+  animation: 1s ease-in-out infinite meterArrowAnimation;
+}
+.smokeanimation1{
+  animation: 1s ease-in-out infinite smokeAnimation;
+}
+.smokeanimation2{
+  animation: 1.5s linear infinite smokeAnimation;
+}
+.smokeanimation3{
+  animation: 2s ease-in-out infinite smokeAnimation;
+}
+
+/* Animations */
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes vibrate {
+  from {
+    transform: translateX(0px);
+    transform: translateY(0px);
+    transform: rotate(0deg);
+  }
+  to {
+    transform: translateX(2px);
+    transform: translateY(1px);
+    transform: rotate(.2deg);
+  }
+}
+
+@keyframes smokeAnimation {
+  0% {
+    fill: rgb(255, 255, 255);
+    transform: translateY(0px);
+    transform: translate(0px, 0px);
+  }
+  30% {
+    fill: rgba(255, 255, 255, 0.705);
+    transform: translate(2px, -20px);
+  }
+  70% {
+    fill: rgba(255, 255, 255, 0.356);
+    transform: translate(4px, -30px);
+  }
+  100% {
+    fill: rgba(255, 255, 255, 0.315);
+    transform: translate(6px, -50px);
+  }
+}
+@keyframes meterArrowAnimation {
+  0% {
+    transform: skew(0px);
+  }
+  100% {
+
+    transform: skewX(100px)
+  }
+}
+
+/* Gradient Pallet */
+.gradienta1{
+  background-color: #003044;
+}
+.gradienta2{
+  background-color: #02567a;
+}
+.gradienta3{
+  background-color: #02567abb;
+}
+@media (max-width: 1120px) {
+  .slideContent{
+    flex-direction: column;
+  }
+  .assetsonLeft{
+    width: 100%;
+  }
+  .assetsonRight{
+    width: 100%;
+  }
+}
