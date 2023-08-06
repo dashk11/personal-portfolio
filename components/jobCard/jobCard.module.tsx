@@ -9,7 +9,7 @@ export default function JobCard(props: any) {
                 <div className={styles.jobOrg}>{props.org}</div>
                 <div className={styles.jobRole}>{props.role}</div>
                 <ul className={styles.jobDescription}>
-                    {props.points.map((x) => <li> <ArrowOutwardIcon/> {x}</li>)}
+                    {props.points.map((x: any) => <li> <ArrowOutwardIcon/> {x}</li>)}
                 </ul>
            
             </div>
