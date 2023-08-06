@@ -1,5 +1,5 @@
 import styles from './page.module.css'
-import About from '@/components/about/about.module';
+import About from '../components/about/about.module';
 
 export default function Navigation() {
   return (

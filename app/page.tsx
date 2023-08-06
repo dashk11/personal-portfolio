@@ -1,16 +1,15 @@
 'use client'
 import styles from './page.module.css'
 import RocketLoanz from '../components/rocketloanz/rocketloanz.module';
-import Yugen from '@/components/yugen/yugen.module';
-import Aiara from '@/components/aiara/aiara.module';
-import Numerator from '@/components/numerator/numerator.module';
-import Footer from '@/components/footer/footer.module';
-import About from '@/components/about/about.module';
+import Yugen from '../components/yugen/yugen.module';
+import Aiara from '../components/aiara/aiara.module';
+import Numerator from '../components/numerator/numerator.module';
+import Footer from '../components/footer/footer.module';
+import About from '../components/about/about.module';
 import Link from "next/link";
 
 export default function Home() {
   const handleScroll = (e: any) => {
-    
       // first prevent the default behavior
       e.preventDefault();
       // get the href and remove everything before the hash (#)
