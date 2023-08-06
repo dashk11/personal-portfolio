@@ -23,12 +23,12 @@ export default function About() {
                     <div className={styles.terminalLine}>
                         <ArrowForwardIcon className={styles.terminalArrow} />&nbsp;&nbsp;
                         <span style={{ color: "#3db5c1" }}>~</span>
-                        &nbsp;I'm a software developer working since 3 years
+                        &nbsp;I'm a software developer
                     </div>
                     <div className={styles.terminalLine}>
                         <ArrowForwardIcon className={styles.terminalArrow} />&nbsp;&nbsp;
                         <span style={{ color: "#3db5c1" }}>~</span>
-                        &nbsp;Check out work
+                        &nbsp;{"<-- "}Check out my previous experiences 
                     </div>
                     <div className={styles.terminalLine}>
                         <ArrowForwardIcon className={styles.terminalArrow} />&nbsp;&nbsp;

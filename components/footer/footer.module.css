@@ -8,7 +8,7 @@
     background-color: black;
 }
 .arrowRight{
-    font-size: 3rem;
+    font-size: 4rem;
     transform: rotate(-45deg);
     color: #eb5939;
     transition: .2s ease-in-out;
