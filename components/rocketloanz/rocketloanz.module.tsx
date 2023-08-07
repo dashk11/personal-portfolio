@@ -4,7 +4,7 @@ import rocketImg from '../../public/rocket.svg';
 import meteor3Img from '../../public/meteor-3.svg';
 import JobCard from '../jobCard/jobCard.module';
 
-export default function RocketLoanz() {
+export default function RocketLoanz(props: any) {
     const points = [
         "Led the development of entire React-based web app on Next.js framework using TypeScript, HTML, and SCSS.",
         "Created user journey wireframes with stakeholders; designed customer experience workflows."
@@ -14,7 +14,7 @@ export default function RocketLoanz() {
         <>
             <div className={styles.slideContent}>
                 <div className={styles.assetsonLeft}>
-                    <JobCard points={points} org={"Rocket Loanz 🚀"} role={"UI/UX developer, Freelance"}/>
+                    <JobCard points={points} org={"Rocket Loanz 🚀"} role={"UI/UX developer, Freelance"} href={props.nextCardId} onClick={props.nextCardHandler}/>
                 </div>
                 <div className={styles.assetsonRight}>
                 <div className={styles.trails}>

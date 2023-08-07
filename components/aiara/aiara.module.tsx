@@ -5,7 +5,7 @@ import drillImg from '../../public/drill.svg';
 import JobCard from '../jobCard/jobCard.module';
 
 
-export default function Aiara() {
+export default function Aiara(props:any) {
     const points = [
         "Developed backend in Django for the entire MES system; maintained API documentation on Swagger; created test suites and performance simulations on locust.",
         "Refactored Kanban view in Angular, reducing the overall page load time by 40%.",
@@ -16,7 +16,7 @@ export default function Aiara() {
     <>
         <div className={styles.slideContent} >
             <div className={styles.assetsonLeft}>
-                <JobCard points={points} org={"Aiara 📈"} role={"Full-Stack Engineer"}/>
+                <JobCard points={points} org={"Aiara 📈"} role={"Full-Stack Engineer"} href={props.nextCardId} onClick={props.nextCardHandler}/>
             </div>
             <div className={styles.assetsonRight} >
             <div className={styles.barChart}>

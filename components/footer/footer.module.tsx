@@ -14,6 +14,9 @@ export default function Footer() {
           </a>
           <a href="#footer" className={`${styles.socialLink}`}>
               <ArrowRightIcon className={styles.arrowRight}/>Blog
+        </a>
+        <a href="https://drive.google.com/file/d/1WMH9uAaYGSEP2vSYsFO-WzK6ZNVcI3RS/view?usp=sharing" className={`${styles.socialLink}`} target="_blank" rel="noopener noreferrer">
+              <ArrowRightIcon className={styles.arrowRight} />Resume
           </a>
       </div> 
     </>

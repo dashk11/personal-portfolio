@@ -14,17 +14,22 @@ export default function About() {
                           <div className={styles.green}></div>
                     </div>
                     <div className={styles.name}>
-                    Darshan Vipresh Sheth
+                    Darshan Vipresh Sheth | darshan.sheth026@gmail.com
                 </div>
                 </div>
                 
                 <div className={styles.terminalContent}>
                 
-                    <div className={styles.terminalLine}>
-                        <ArrowForwardIcon className={styles.terminalArrow} />&nbsp;&nbsp;
-                        <span style={{ color: "#3db5c1" }}>~</span>
-                        &nbsp;I'm a software developer
+                <div className={styles.terminalLine}>
+                    <ArrowForwardIcon className={styles.terminalArrow} />&nbsp;&nbsp;
+                    <span style={{ color: "#3db5c1" }}>~</span>
+                    &nbsp;Hello, I'm Darshan, a software developer
                     </div>
+                    <div className={styles.terminalLine}>
+                    <ArrowForwardIcon className={styles.terminalArrow} />&nbsp;&nbsp;
+                    <span style={{ color: "#3db5c1" }}>~</span>
+                    &nbsp;Looking to collaborate on interesting projects
+                </div>
                     <div className={styles.terminalLine}>
                         <ArrowForwardIcon className={styles.terminalArrow} />&nbsp;&nbsp;
                         <span style={{ color: "#3db5c1" }}>~</span>

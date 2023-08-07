@@ -4,7 +4,7 @@ import pipelineImg from '../../public/pipeline.svg';
 import redHandleImg from '../../public/redHandle.svg';
 import JobCard from '../jobCard/jobCard.module';
 
-export default function Yugen() {
+export default function Yugen(props: any) {
     const points = [
         "Designed and developed data transformation and extraction pipelines to collect user-game-level data for 5 million daily Xbox and Steam users.",
         "Resolved bottlenecks in the authentication scaling aspect for the required number of users by 60%. ",
@@ -50,7 +50,7 @@ export default function Yugen() {
                 <Image src={redHandleImg} width={100} height={100} alt='' className={styles.redHandleImg}/>
               </div>
               <div className={styles.assetsonRight}>
-                <JobCard points={points} org={"Yugen 🤖"} role={"Data Engineer"}/>
+                <JobCard points={points} org={"Yugen 🤖"} role={"Data Engineer"} href={props.nextCardId} onClick={props.nextCardHandler} left={true}/>
               </div>
             </div>
 

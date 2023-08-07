@@ -2,16 +2,24 @@
   width: 80%;
   /* height: 50%; */
   font-size: 1.5rem;
-  background-color: gray;
+  background-color:#000000;
   border-radius: 10px;
-  padding: 1rem;
-  color: black;
+  color: #fff5f5;
+}
+.jobCardContent{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
 }
 .jobOrg{
     font-weight: 800;
+    color: #eb5939;
 }
 .jobRole{
     font-style: italic;
+    font-weight: 800;
+    color: #eb5939;
+    font-size: 1.5rem;
 }
 
 .jobDescription{
@@ -21,3 +29,17 @@
 .jobDescription li{
     margin-top: 1rem;
 }
+.responsibilityItem:hover{
+    cursor: pointer;
+
+}
+.ArrowOutwardIcon{
+    transition: .1s ease-in-out;
+}
+.responsibilityItem:hover .ArrowOutwardIcon{
+    font-size: 2rem;
+    color: indianred;
+    transform: rotate(45deg);
+}
+/* rgb(185, 83, 43) */
+/* numerator - #24b47d; #064b53; */

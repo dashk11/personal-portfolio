@@ -29,7 +29,7 @@ export default function Home() {
       </div>
       <div className={styles.navigation}>
         <Link className={styles.navigationItem} href="#fifth" onClick={handleScroll}>ABOUT</Link>
-        <Link className={styles.navigationItem} href="#third" onClick={handleScroll}>WORK</Link>
+        <Link className={styles.navigationItem} href="#fourth" onClick={handleScroll}>WORK</Link>
         <Link className={styles.navigationItem} href="#footer" onClick={handleScroll}>CONNECT</Link>
       </div>
       <div className={styles.main}>
@@ -37,20 +37,20 @@ export default function Home() {
           <div className={`${styles.slide} ${styles.slide5}`} id="fifth">
             <About />
           </div> 
-          <div className={`${styles.slide} ${styles.slide4}`} id="third">
-            <RocketLoanz/>
+          <div className={`${styles.slide} ${styles.slide4}`} id="fourth">
+          <RocketLoanz nextCardId="#first" nextCardHandler={handleScroll}/>
           </div> 
     
           <div className={`${styles.slide} ${styles.slide1}`} id="first">
-            <Yugen/>
+            <Yugen nextCardId="#second" nextCardHandler={handleScroll}/>
           </div>
 
           <div className={`${styles.slide} ${styles.slide2}`} id="second">
-            <Aiara/>
+            <Aiara nextCardId="#third" nextCardHandler={handleScroll}/>
           </div>
           
           <div className={`${styles.slide} ${styles.slide3}`} id="third">
-            <Numerator/>
+            <Numerator nextCardId="#footer" nextCardHandler={handleScroll}/>
         </div>
         <div id="footer" style={{width: "100%", height: "0rem"}}></div>
         <Footer/>

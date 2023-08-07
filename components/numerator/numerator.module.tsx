@@ -5,7 +5,7 @@ import buttonTopImg from '../../public/buttonTop.svg';
 import brandsImg from '../../public/brands.svg';
 import JobCard from '../jobCard/jobCard.module';
 
-export default function Numerator() {
+export default function Numerator(props: any) {
     const points = [
         "Designed and implemented data models and APIs in Django for a product that reduced operations time by at least 20-25%.",
         "Designed and led data migration-related tasks in Snowflake and Apache airflow, which accounted for additional data points for clients and helped onboard at least 15 new clients for the organization.",
@@ -24,7 +24,7 @@ export default function Numerator() {
             </div>
             </div>
             <div className={styles.assetsonRight}>
-                <JobCard points={points} org={"Numerator 📈"} role={"Backed Engineer"}/>
+                <JobCard points={points} org={"Numerator 📈"} role={"Backed Engineer"} href={props.nextCardId} onClick={props.nextCardHandler} left={true}/>
             </div>
         </div>
         <div className={styles.slideBackground}>
